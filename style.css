@@ -198,70 +198,42 @@ nav{
 /* stats */
 .stats{
     background:  #ad4200;
-    padding: 80px 60px;
+    padding: 40px 60px;
     overflow: hidden;
 }
 .paw-path{
     display: flex;
-    flex-direction: column;
-    gap: 0;
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-}
-.paw-path::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top:0;
-    bottom:0;
-    width:2px;
-    background: repeating-linear-gradient(
-        to bottom,
-        orange 0px,
-        orange 12px,
-        transparent 12px,
-        transparent 24px
-    );
-    transform: translateX(-50%);
+    flex-direction: row;
+    align-items: stretch;
+    height:400px;
 }
 .paw-step{
+    flex:1;
     display: flex;
-    align-items: center;
-    gap:24px;
-    padding: 20px 0;
-    position: relative;
+    padding: 0 12px;
 }
-.paw-step.left{
-    flex-direction: row;
-    padding-right: 55%;
+.paw-step.top{
+    align-items:flex-start;
 }
-.paw-step.right {
-    flex-direction: row-reverse;
-    padding-left: 55%;
-}
-.paw-icon .paw-icon.flipped{
-    font-size: 52px;
-    flex-shrink: 0;
-    filter: drop-shadow(4px 4px 0 black);
-    display: inline-block;
+.paw-step.bottom {
+    align-items:flex-end;
 }
 .stat-card{
     background: orange;
     border-radius: 16px;
     padding: 20px 28px;
-    border: 3px solid orange;
+    border: 3px solid black;
     box-shadow: 5px 5px 0 black;
-    min-width: 190px;
+    min-height: 200px;
 }
 .stat-num{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 52px;
+    font-size: 60px;
     color: #ad4200;
     line-height: 1;
 }
 .stat-label{
-    font-size: 11px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #ad4200;
