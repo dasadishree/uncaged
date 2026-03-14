@@ -250,10 +250,21 @@ nav{
     top:0;
     left:0;
 }
-.paws{
-    position: absolute;
-    z-index:0;
-    bottom: 300;
-    left: 0;
-    height: 1vh;
+/* join our movememnent */
+.joinourmovement{
+    background-color: black;
+}
+.join-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(72px, 10vw, 130px);
+    color: orange;
+    padding-bottom:0px;
+    margin-bottom:0px;
+}
+.join-desc{
+    color: orange;
+    font-family: sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-bottom: 2vh;
 }
