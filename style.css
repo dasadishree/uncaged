@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #FFF5E4;
     color: black;
+    overflow-x: hidden;
 }
 
+/* navbar */
 nav{
     background: #ad4200;
     display: flex;
@@ -81,4 +94,19 @@ nav{
 .btn-nav:hover{
     background: #ad4200;
     transform: scale(1.04);
+}
+
+/* hero section */
+.hero{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-grid{
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgb(245, 166,35,0.18) 1px, transparent 1px), linear-gradient(90deg, rgb(245, 166, 35, 0.18) 1px, transparent 1px);
+    background-size: 44px 44px;
 }
