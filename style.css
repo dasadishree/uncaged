@@ -200,8 +200,11 @@ nav{
     background:  #ad4200;
     padding: 40px 60px;
     overflow: hidden;
+    position: relative;
 }
 .paw-path{
+    z-index:0;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -239,4 +242,18 @@ nav{
     color: #ad4200;
     margin-top: 4px;
     font-weight: 600;
+}
+.footsteps{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
+.paws{
+    position: absolute;
+    z-index:0;
+    bottom: 300;
+    left: 0;
+    height: 1vh;
 }
