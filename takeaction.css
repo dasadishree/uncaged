@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #FFF5E4;
+    color: black;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+/* navbar */
+nav{
+    background: #ad4200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 72px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin:0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-icon{
+    width: 38px;
+    height: 38px;
+}
+
+.logo-text{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    color: orange;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.logo-sub{
+    font-size:9px;
+    letter-spacing: 3px;
+    color: #fd6a05;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 2px;
+    text-decoration:none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+}
+
+.nav-links a{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fd6a05;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.nav-links a:hover{
+    color: orange;
+}
+
+.btn-nav{
+    background: orange;
+    color: black;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: background .2s, transform .15s;
+}
+
+.btn-nav:hover{
+    background: #ad4200;
+    transform: scale(1.04);
+}
+
+/* left content */
+.page-content{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:60px;
+    padding: 80px 60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cellipse cx='30' cy='25' rx='8' ry='10' fill='%23F5A623' opacity='0.09'/%3E%3Cellipse cx='55' cy='20' rx='7' ry='9' fill='%23F5A623' opacity='0.09'/%3E%3Cellipse cx='75' cy='30' rx='6' ry='8' fill='%23F5A623' opacity='0.09'/%3E%3Cellipse cx='15' cy='35' rx='6' ry='8' fill='%23F5A623' opacity='0.09'/%3E%3Cellipse cx='45' cy='62' rx='18' ry='15' fill='%23F5A623' opacity='0.09' transform='rotate(-15 45 62)'/%3E%3C/svg%3E");
+    background-size: 140px 140px;
+}
+.page-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 6vw, 80px);
+    line-height: .92;
+    color: #ad4200;
+    margin-bottom:20px;
+}
+
+.page-body{
+    font-family: sans-serif;
+    font-size:16px;
+    line-height:1.8;
+    color: #ad4200;
+    max-width: 420px;
+}
+/* right content */
+.slideshow-row{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.arrow{
+    width: 40px; 
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #ad4200;
+    background: transparent;
+    color: #ad4200;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow:hover{
+    background: #ad4200;
+    color:white;
+}
+.card-box{
+    flex: 1;
+    max-width: 520px;
+    max-height: 340px;
+    aspect-ratio: 16/10;
+    background: black;
+    border-radius: 20px;
+    padding: 32px 36px;
+    position: relative; 
+    overflow: hidden;
+}
+.card-box::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-size: 22px 22px;
+}
+.slide{
+    display: none;
+    flex-direction: column;
+    gap:16px;
+    height:100%;
+    position: relative;
+    z-index: 1;
+}
+.slide.active{
+    display:flex;
+}
+.slide-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: orange;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.slide-body{
+    font-size: 15px;
+    line-height: 1.8;
+    color: wheat;
+}
+
+/* footer */
+footer{
+    display: flex;
+    gap:31.5vw;
+    background-color: #ad4200;
+    color:wheat;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin-top: auto;
+}
+.credit{
+    text-decoration: none;
+    color:wheat
+}
