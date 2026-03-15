@@ -15,6 +15,9 @@ body{
     background: #FFF5E4;
     color: black;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 a{
     text-decoration: none;
@@ -293,6 +296,7 @@ footer{
     font-family: sans-serif;
     padding-top: 10px;
     padding-bottom:10px;
+    margin-top: auto;
 }
 .credit{
     text-decoration: none;
