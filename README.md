@@ -9,5 +9,4 @@ A website for a youth nonprofit for animal safety/protection, made as a part of 
 
 TO DO:
 - add footer on all pages (credit techfluences)
-- project subsection on what we do page
 - all of donate page, who we are page, take action page
