@@ -13,26 +13,21 @@ const grid = document.getElementById('factsGrid');
 if(grid){
     const originals = Array.from(grid.children);
     originals.forEach(card=>{
-        const clone=card.cloneNode(true);
+        const clone = card.cloneNode(true);
         grid.appendChild(clone);
     });
 
-    let pos=0;
-    const speed=0.5;
+    let pos = 0;
+    const speed = 0.4;
+    let halfWidth = 0;
 
-    grid.addEventListener('mouseenter', ()=>speed_paused=true);
-    grid.addEventListener('mouseleave', ()=>speed_paused=false);
-
-    let speed_paused=false;
-    function tickWithPause() {
-        if(!speed_paused){
-            pos+=speed;
-            const halfWidth=grid.scrollWidth/2;
-            if(pos>=halfWidth)pos=0;
-            grid.style.transform = `translateX(-${pos}px)`;
-        }
-        requestAnimationFrame(tickWithPause);
+    function tick() {
+        if (halfWidth === 0) halfWidth = grid.scrollWidth / 2;
+        pos += speed;
+        if (pos >= halfWidth) pos = 0;
+        grid.style.transform = `translateX(-${pos}px)`;
+        requestAnimationFrame(tick);
     }
 
-    requestAnimationFrame(tickWithPause);
+    requestAnimationFrame(tick);
 }
