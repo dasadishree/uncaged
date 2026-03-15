@@ -145,6 +145,60 @@ nav{
     object-fit:contain;
 }
 
+/* team members & paws */
+.team{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.team-section{
+    padding:80px 60px;
+    background: linear-gradient(to bottom, #FFF5E4, #fdd5a0);
+}
+.team-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 6vw, 84px);
+    line-height:.92;
+    color: #0F0D0A;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.team-grid{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:40px;
+    justify-items: center;
+}
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.team-paw{
+    margin-bottom: 16px;
+    svg{
+        width:72px;
+        height:72px;
+        fill: #ad4200;
+        opacity:0.85;
+    }
+}
+.team-name{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #0F0D0A;
+    margin-bottom: 4px;
+}
+.team-role{
+    font-size: 13px;
+    color: #7a5030;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
 /* footer */
 footer{
     display: flex;
