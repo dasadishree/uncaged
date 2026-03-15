@@ -104,7 +104,7 @@ nav{
 /* hero */
 .hero{
     position: relative;
-    min-height: 85vh;
+    height: 75vh;
     overflow:hidden;
     display: flex;
     flex-direction:column;
@@ -148,7 +148,7 @@ nav{
     text-align: center;
 
     position: absolute;
-    bottom:200px;
+    bottom:50px;
     left:60px;
     z-index:2;
 }
@@ -176,4 +176,32 @@ nav{
     font-size: 30px; line-height: 1.6;
     color: orange;
     font-weight: 600;
+}
+
+/* mission */
+.mission{
+    background: wheat;
+    padding:90px 60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cellipse cx='30' cy='25' rx='8' ry='10' fill='%23F5A623' opacity='0.25'/%3E%3Cellipse cx='55' cy='20' rx='7' ry='9' fill='%23F5A623' opacity='0.25'/%3E%3Cellipse cx='75' cy='30' rx='6' ry='8' fill='%23F5A623' opacity='0.25'/%3E%3Cellipse cx='15' cy='35' rx='6' ry='8' fill='%23F5A623' opacity='0.25'/%3E%3Cellipse cx='45' cy='62' rx='18' ry='15' fill='%23F5A623' opacity='0.25' transform='rotate(-15 45 62)'/%3E%3C/svg%3E");
+    background-size: 140px 140px; 
+}
+
+.mission-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: .95;
+    color: #ad4200;
+    margin-bottom: 32px;
+}
+.mission-body{
+    font-size: 17px;
+    line-height: 1.85;
+    color: sienna;
+    font-family: sans-serif;
+    p{
+        margin-bottom: 18px;
+    }
+    p:last child{
+        margin-bottom:0;
+    }
 }
