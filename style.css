@@ -125,7 +125,6 @@ nav{
     font-size: clamp(72px, 10vw, 130px);
     line-height: .92;
     color: orange;
-    animation: fadeUp .7s .1s ease both;
 }
 
 .hero-title .outline{
@@ -139,14 +138,12 @@ nav{
     line-height: 1.65;
     max-width: 520px;
     font-style: italic;
-    animation: fadeUp .7s .2s ease both;
 }
 .hero-btns{
     display: flex;
     gap: 16px;
     margin-top: 40px;
     flex-wrap: wrap;
-    animation: fadeUp .7s .3s ease both;
 }
 
 .btn{
@@ -185,7 +182,6 @@ nav{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    animation: fadeIn .9s .2s ease both;
     pointer-events: none;
 }
 
@@ -255,6 +251,8 @@ nav{
 .animaltesting{
     background: #fd6a05;
     padding: 60px;
+    background-image: linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 .testing::before{
     content: 'LAB';
@@ -284,17 +282,9 @@ nav{
     display: flex;
     flex-direction:row;
     gap:20px;
-    overflow-x:auto;
+    overflow: hidden;
     padding-bottom: 16px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-.facts-grid::-webkit-scrollbar{
-    height:6px;
-}
-.facts-grid::-webkit-scrollbar-thumb{
-    background: orange;
-    border-radius:10px;
+    width: max-content;
 }
 .fact-card{
     background: rgba(255,255,255,0.04);
@@ -306,7 +296,6 @@ nav{
     overflow: hidden;
     min-width: 300px;
     max-width: 300px;
-    scroll-snap-align: start;
     flex-shrink:0;
 }
 .fact-card::before{
