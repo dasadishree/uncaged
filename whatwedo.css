@@ -283,3 +283,18 @@ nav{
     position: relative;
     z-index:1;
 }
+
+/* footer */
+footer{
+    display: flex;
+    gap:31.5vw;
+    background-color: #ad4200;
+    color:wheat;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.credit{
+    text-decoration: none;
+    color:wheat
+}
