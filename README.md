@@ -16,3 +16,4 @@ Old Site: https://uncagedorganizatio.wixsite.com/uncaged?fbclid=PAZnRzaAQEYH5leH
 - ai used to make the design mobile-friendly
 
 A website for a youth nonprofit for animal safety/protection, made as a part of Techfluences!
+<img width="1470" height="956" alt="Screenshot 2026-03-17 at 4 26 20 AM" src="https://github.com/user-attachments/assets/2899bb39-6799-45bd-bb0b-34d4437b2de7" />
